@@ -1,0 +1,31 @@
+.detail .ant-breadcrumb {
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+.detail .navbar {
+  margin-top: 30px;
+}
+.detail .navbar .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+.detail .navbar .post_nav .title-anchor {
+  color: #777;
+  font-size: 0.8rem;
+}
+.detail .navbar .post_nav .active {
+  color: #1890ff;
+}
+.detail .post .post_title {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+}
+.detail .comment .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #e8e8e8;
+}

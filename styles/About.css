@@ -1,0 +1,10 @@
+.about {
+  background-color: #fff;
+  text-align: center;
+}
+.about .introduce .item .title {
+  font-weight: bolder;
+}
+.about .introduce .item .text {
+  font-size: 0.9rem;
+}

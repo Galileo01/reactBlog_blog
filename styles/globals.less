@@ -1,0 +1,114 @@
+@import './normalize.css';
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+body {
+    background-color: #f6f6f6 !important;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.comm_main {
+    margin-top: 0.5rem;
+    .comm_right {
+        background-color: #fff;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        border-bottom: 1px solid #eee;
+    }
+    .comm_left {
+        background-color: #fff;
+        margin-left: 0.5rem;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+        border-bottom: 1px solid #eee;
+    }
+}
+
+.posts_list {
+    .list_title {
+        text-align: center;
+    }
+    .post_item {
+        margin-bottom: 10px;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        .item_title {
+            font-size: 1.3rem;
+            color: #1e90ff;
+            padding: 0 0.5rem;
+            .jin {
+                visibility: hidden;
+            }
+        }
+        .item_title:hover {
+            a {
+                text-decoration: underline;
+            }
+            .jin {
+                visibility: visible;
+            }
+        }
+        .item_desc {
+            color: #777;
+            padding: 0.5rem;
+        }
+        .small {
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+        .item_icon {
+            padding: 0.5rem 0;
+            cursor: pointer;
+        }
+        .item_icon span {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        .ant-tag {
+            cursor: pointer;
+        }
+        >div{
+            padding: 0.2rem 0;
+        }
+    }
+    .post_item:last-of-type {
+        margin-bottom: 0px;
+    }
+}
+
+.global_footer {
+    text-align: center;
+    color: #4e6e8e;
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+
+.introduce {
+    padding-top: 20px;
+    text-align: center;
+    .item {
+        margin-bottom: 20px;
+        .title {
+            font-size: 1.2rem;
+        }
+        .text {
+            color: #4e6e8e;
+            font-size: 0.8rem;
+        }
+    }
+    .item:last-of-type {
+        margin-bottom: 0px;
+    }
+}

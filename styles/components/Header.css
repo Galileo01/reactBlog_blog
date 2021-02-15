@@ -1,0 +1,38 @@
+.header_wapper {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+.header_wapper .avatar_wapper {
+  display: flex;
+  align-items: center;
+}
+.header_wapper .avatar_wapper .avatar {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header_wapper .avatar_wapper .avatar img {
+  border-radius: 50%;
+}
+.header_wapper .avatar_wapper .name {
+  font-size: 1.4rem;
+  margin: 0 10px;
+  color: #1890ff;
+  font-weight: bold;
+}
+.header_wapper .avatar_wapper .other {
+  font-size: 0.9rem;
+}
+.header_wapper .nav_wapper .ant-menu .ant-menu-item {
+  font-size: 0.8rem;
+}
+.header_wapper .ant-menu-horizontal {
+  border: none;
+}
+.ant-menu-submenu-popup ul.ant-menu {
+  min-width: 90px;
+}
+.ant-menu-submenu-popup ul.ant-menu .ant-menu-item {
+  font-size: 0.8rem;
+  text-align: center;
+}

@@ -1,0 +1,7 @@
+/*页面 样式*/
+@import 'Detail.css';
+@import 'Index.css';
+@import 'About.css';
+/*组件 样式*/
+
+@import 'components/Header.css';
