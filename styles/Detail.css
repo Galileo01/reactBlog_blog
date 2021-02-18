@@ -11,21 +11,37 @@
   font-weight: 600;
   text-align: center;
 }
-.detail .navbar .post_nav .title-anchor {
-  color: #777;
-  font-size: 0.8rem;
-}
-.detail .navbar .post_nav .active {
-  color: #1890ff;
-}
 .detail .post .post_title {
   font-size: 1.6rem;
   text-align: center;
   padding: 1rem;
 }
+.detail .post .content {
+  padding: 1.3rem;
+  font-size: 1rem;
+  color: #555454;
+  overflow-x: hidden;
+}
+.detail .post .content code {
+  font-size: 0.87rem;
+}
+.detail .post .content .hljs {
+  border-radius: 0.2rem;
+}
+.detail .post .content h1 {
+  font-size: 1.6rem;
+}
+.detail .post .content h2 {
+  font-size: 1.4rem;
+}
+.detail .post .content h3 {
+  font-size: 1.2rem;
+}
 .detail .comment .title {
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
-  border-bottom: 1px solid #e8e8e8;
+  border: 1px solid #e8e8e8;
+  border-left: 0px;
+  border-right: 0px;
 }

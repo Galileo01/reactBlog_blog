@@ -23,6 +23,9 @@
 .header_wapper .avatar_wapper .other {
   font-size: 0.9rem;
 }
+.header_wapper .nav_wapper {
+  display: flex;
+}
 .header_wapper .nav_wapper .ant-menu .ant-menu-item {
   font-size: 0.8rem;
 }

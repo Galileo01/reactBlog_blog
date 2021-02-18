@@ -1,16 +1,18 @@
 import React from 'react';
 import { Row, Col, Menu, Affix } from 'antd';
-import { HomeOutlined, InfoCircleOutlined, SearchOutlined } from '@ant-design/icons'
+import { HomeOutlined, InfoCircleOutlined } from '@ant-design/icons'
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 const { Item } = Menu;
 import { postTypes } from '../commonJs/global';
+import Search from './Search'
+
 export default function Header() {
     const router = useRouter();
     console.log(router);
     //默认选中
     const keys = ['/', '/about', ...postTypes.map(item => '/' + item.name)];
-    const selectedKeys = [];
+    const selectedKeys: string[] = [];
     for (let key of keys) {
         if (router.pathname === key) {
             selectedKeys.push(key);
@@ -30,7 +32,7 @@ export default function Header() {
         <Affix offsetTop={0}>
             <section className="header_wapper">
                 <Row justify="center" align="middle">
-                    <Col xs={12} sm={12} md={10} lg={10} xl={10}>
+                    <Col xs={12} sm={12} md={8} lg={8} xl={8}>
                         <div className="avatar_wapper">
                             <div className="avatar" onClick={() => goto('/')}>
                                 <Image alt="头像" src="/icon.jpg" height={40} width={40} />
@@ -41,10 +43,13 @@ export default function Header() {
                         </span>
                                 <span className="other">个人博客</span>
                             </div>
+
                         </div>
                     </Col>
-                    <Col xs={1} sm={1} md={10} lg={10} xl={10}>
+                    {/* <Col xs={0} sm={5} md={{span:4,offset:2}} lg={{span:4,offset:3}} xl={{span:4,offset:3}}>  <Search /></Col> */}
+                    <Col xs={1} sm={1} md={12} lg={12} xl={11} >
                         <div className="nav_wapper">
+
                             <Menu mode="horizontal" onClick={(p) => goto(p.key)} selectedKeys={selectedKeys}>
                                 <Item icon={<HomeOutlined />} key="/" >首页</Item>
                                 {
@@ -57,8 +62,9 @@ export default function Header() {
                                     })
                                 }
                                 <Item icon={<InfoCircleOutlined />} key="/about">关于</Item>
-                                <Item icon={<SearchOutlined />} key="/search"></Item>
+
                             </Menu>
+
                         </div>
                     </Col>
                 </Row>

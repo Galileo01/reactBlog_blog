@@ -5,3 +5,6 @@
 /*组件 样式*/
 
 @import 'components/Header.css';
+@import 'components//Search.css';
+@import 'components/PostListNav.css';
+@import 'components/PostComment.css';

@@ -1,0 +1,24 @@
+.post_comment .make_comment {
+  margin-bottom: 10px;
+}
+.post_comment .make_comment .bottom {
+  margin-top: 10px;
+}
+.post_comment .actions:hover {
+  color: #1890ff;
+}
+.post_comment .comment_list .replay_comment {
+  margin-top: 10px;
+}
+.post_comment .comment_list .replay_comment .bottom {
+  margin-top: 10px;
+}
+.post_comment .comment_list .replay_comment .bottom .btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.post_comment .comment_list .nested {
+  background-color: #fafbfc;
+  padding-left: 1rem;
+}

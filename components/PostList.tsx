@@ -1,14 +1,21 @@
 import React from 'react';
 import { List, Tag } from 'antd';
-import { postTypes } from '../commonJs/global';
-import PropTypes from 'prop-types';
 import moment from 'moment';
-export default function PostList({ itemList, headerText }) {
-    function format(dateStr) {
-        console.log(dateStr);
-        const time = moment(dateStr);
-        return time.format('YYYY/MM/DD');
-    }
+import { useRouter } from 'next/router'
+import { postTypes } from '../commonJs/global';
+import { postBaseInfo } from '../commonJs/types'
+interface Props {
+    itemList: postBaseInfo[],
+    headerText: string
+}
+function format(dateStr) {
+    console.log(dateStr);
+    const time = moment(dateStr);
+    return time.format('YYYY/MM/DD');
+}
+
+const PostList: React.FC<Props> = ({ itemList, headerText }) => {
+    const router = useRouter();
     return (
         <List
             header={<h1 className="list_title">{headerText}</h1>}
@@ -16,11 +23,11 @@ export default function PostList({ itemList, headerText }) {
             dataSource={itemList}
             className="posts_list"
             renderItem={(item) => (
-                <List.Item className="post_item" key={item.pid}>
+                <List.Item className="post_item" key={item.Pid}>
                     <div className="item_title">
                         <span className="jin" id={item.title}>
                             #</span>-
-                    <a href={'/detail?pid=' + item.pid}>{item.title} </a>
+                    <a href={'/detail?Pid=' + item.Pid + `&page_from=${router.pathname}`} >{item.title} </a>
 
                     </div>
                     <div className="item_icon small">
@@ -51,8 +58,4 @@ export default function PostList({ itemList, headerText }) {
         />
     )
 }
-
-PostList.propTypes = {
-    itemList: PropTypes.array.isRequired,
-    headerText: PropTypes.string.isRequired
-}
+export default PostList;

@@ -1,34 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## blog
 
-## Getting Started
+博客主页 next **服务端渲染**
 
-First, run the development server:
+[仓库地址](https://github.com/Galileo01/reactBlog_blog)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### 技术栈：
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- react（使用最新hooks）
+- next （基于react 的 服务端渲染 框架） 对SEO（搜索引擎友好）
+- antd（基于react 的组件库）
+- typescript（js 超集，提供类型系统，利于代码编辑和项目的长期维护）
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 特色功能
+- 页面文章导航
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 评论功能
+支持回复功能和懒加载（基于IntersectionObserver API）

@@ -31,13 +31,14 @@ export default function About() {
                             主要项目
                     </div>
                         <div className="text">
+                            <p><a href="https://github.com/Galileo01/reactBlog">React 博客系统(本博客)</a></p>
                             <p>
                                 <a href="https://github.com/Galileo01/Risk_management_system_byVue">重大风险隐患排除与治理系统</a>
                             </p>
                             <p><a href="https://github.com/Galileo01/School_life_management_Vue">校园宝后台管理界面</a></p>
                             <p><a href="https://github.com/Galileo01/chrome_extends">chrome 扩展仓库</a></p>
                             <p><a href="https://github.com/Galileo01/campus_cat_book">小程序-校园猫猫图鉴/全栈开发</a></p>
-                            <p><a href="https://github.com/Galileo01/reactBlog_blog">React 博客系统(本博客)</a></p>
+
                         </div>
                     </div>
                 </section>

@@ -1,6 +1,11 @@
+import React from 'react';
 import Head from 'next/head';
-import PropTypes from 'prop-types';
-export default function MyHead({ title }) {
+interface MyHeadProps {
+    title: string
+}
+const MyHead: React.FC<MyHeadProps> = ({
+    title
+}) => {
     return (
         <>
             <Head>
@@ -10,6 +15,4 @@ export default function MyHead({ title }) {
         </>
     )
 }
-MyHead.propTypes = {
-    title: PropTypes.string
-}
+export default MyHead;
