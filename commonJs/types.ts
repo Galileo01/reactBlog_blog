@@ -18,7 +18,7 @@ export interface postItem extends postBaseInfo {
 }
 
 //搜索结果项
-interface suggestItem {
+export interface suggestItem {
     title: string;
     Pid: number;
 }
@@ -43,4 +43,10 @@ export interface submitCommentItem {
     replyCid: number | null;
     content: string;
     username: string;
+}
+
+//列表泛型
+export interface resListData<T> {
+    data: T[];
+    ok: number;
 }
