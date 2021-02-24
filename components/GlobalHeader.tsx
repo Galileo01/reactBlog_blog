@@ -1,7 +1,6 @@
 import React from 'react';
 import { Row, Col, Menu, Affix } from 'antd';
 import { HomeOutlined, InfoCircleOutlined } from '@ant-design/icons'
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 const { Item } = Menu;
 import { postTypes } from '../commonJs/global';
@@ -35,7 +34,7 @@ export default function Header() {
                     <Col xs={12} sm={12} md={8} lg={8} xl={8}>
                         <div className="avatar_wapper">
                             <div className="avatar" onClick={() => goto('/')}>
-                                <Image alt="头像" src="/icon.jpg" height={40} width={40} />
+                                <img alt="头像" src="https://cdn.jsdelivr.net/gh/Galileo01/imgCloud@master/icon.jpg" height={40} width={40} />
                             </div>
                             <div className="text">
                                 <span className="name">

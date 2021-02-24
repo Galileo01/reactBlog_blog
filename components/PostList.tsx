@@ -9,7 +9,6 @@ interface Props {
     headerText: string
 }
 function format(dateStr) {
-    console.log(dateStr);
     const time = moment(dateStr);
     return time.format('YYYY/MM/DD');
 }
