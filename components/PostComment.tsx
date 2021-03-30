@@ -1,5 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Comment, Input, Row, Col, Button, notification, Spin } from 'antd';
+import {
+    Comment,
+    Input,
+    Row,
+    Col,
+    Button,
+    notification,
+    Spin,
+} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import filterXSS from 'xss';
 import moment from 'moment';
@@ -31,6 +39,11 @@ const PostComment: React.FC<Props> = ({ Pid }) => {
     //提交评论
     async function submitComment() {
         console.log(content, username);
+        if (content.length === 0)
+            return notification.info({
+                message: '请填写排评论内容',
+                placement: 'bottomRight',
+            });
         const { data } = await addComment({
             Pid,
             replyCid: null,
@@ -63,7 +76,7 @@ const PostComment: React.FC<Props> = ({ Pid }) => {
         const { data } = await addComment({
             Pid,
             replyCid,
-            content: filterXSS(replyContent),//过滤字符串
+            content: filterXSS(replyContent), //过滤字符串
             username: replyUsername,
         });
         const newReply = data.data;
@@ -255,5 +268,4 @@ const PostComment: React.FC<Props> = ({ Pid }) => {
         </div>
     );
 };
-
 export default PostComment;

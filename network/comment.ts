@@ -19,6 +19,8 @@ export async function getByPid(Pid: number) {
         },
     });
     const commentList = data.data;
+    // console.log(commentList);
+    
     //第一层的评论
     const firstLevel = commentList.filter((item) => item.replyCid === null);
     const secondLevel = commentList.filter((item) => item.replyCid !== null);

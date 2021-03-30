@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "push":"scp -r .next/* admin@121.41.225.12:/home/admin/projects/reactBlog/blog/.next",
+    "pm2":"pm2 start npm --name reactBlog_blog -- run start "
   },
   "dependencies": {
     "@types/lodash": "^4.14.168",

@@ -1,0 +1,8 @@
+.darkmode {
+  color: var(--text-color-w);
+  cursor: pointer;
+}
+.darkmode img {
+  height: 26x;
+  width: 26px;
+}

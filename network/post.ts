@@ -5,6 +5,7 @@ import {
     postItem,
     postType,
     resListData,
+    resData,
 } from '../commonJs/types';
 //基础信息 数组
 type basePostListRes = resListData<postBaseInfo>;
@@ -17,7 +18,7 @@ export function getAllPost() {
 }
 
 export function getPostByPid(Pid: number) {
-    return ins.get<postListRes>('/post/getByPid', {
+    return ins.get<resData<postItem>>('/post/getByPid', {
         params: {
             Pid,
         },
@@ -29,5 +30,11 @@ export function getPostByType(type: postType) {
         params: {
             type,
         },
+    });
+}
+//递增 帖子的 阅读次数
+export function increCount(Pid: number) {
+    return ins.post<resData<string | number>>('/post/increCount', {
+        Pid,
     });
 }

@@ -5,8 +5,18 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+:root {
+  --bgc-body: #f6f6f6;
+  --bgc: #fff;
+  --text-color: rgba(0, 0, 0, 0.85);
+  --post_list-item-desc-color: #777;
+  --post_list-small-color: #aaa;
+  --global_footer-color: #4e6e8e;
+  --introduce-text-color: #4e6e8e;
+  --detail-content-color: #555454;
+}
 body {
-  background-color: #f6f6f6 !important;
+  background-color: var(--bgc-body) !important;
 }
 a {
   color: inherit;
@@ -31,19 +41,19 @@ html::-webkit-scrollbar-track {
   /*滚动条里面轨道*/
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  background: #EDEDED;
+  background: #ededed;
 }
 .comm_main {
   margin-top: 0.5rem;
 }
 .comm_main .comm_right {
-  background-color: #fff;
+  background-color: var(--bgc);
   padding: 0.3rem;
   border-radius: 0.3rem;
   border-bottom: 1px solid #eee;
 }
 .comm_main .comm_left {
-  background-color: #fff;
+  background-color: var(--bgc);
   margin-left: 0.5rem;
   padding: 0.3rem;
   border-radius: 0.3rem;
@@ -51,6 +61,7 @@ html::-webkit-scrollbar-track {
 }
 .posts_list .list_title {
   text-align: center;
+  color: var(--text-color);
 }
 .posts_list .post_item {
   margin-bottom: 10px;
@@ -72,12 +83,18 @@ html::-webkit-scrollbar-track {
   visibility: visible;
 }
 .posts_list .post_item .item_desc {
-  color: #777;
+  color: var(--post_list-item-desc-color);
   padding: 0.5rem;
 }
 .posts_list .post_item .small {
-  color: #aaa;
+  color: var(--post_list-small-color) !important;
   font-size: 0.8rem;
+}
+.posts_list .post_item .bottom {
+  display: flex;
+}
+.posts_list .post_item .bottom .read-count {
+  margin-left: 10px;
 }
 .posts_list .post_item .item_icon {
   padding: 0.5rem 0;
@@ -98,7 +115,7 @@ html::-webkit-scrollbar-track {
 }
 .global_footer {
   text-align: center;
-  color: #4e6e8e;
+  color: var(--global_footer-color);
   font-size: 0.8rem;
   padding: 10px 0;
 }
@@ -111,9 +128,10 @@ html::-webkit-scrollbar-track {
 }
 .introduce .item .title {
   font-size: 1.2rem;
+  color: var(--text-color);
 }
 .introduce .item .text {
-  color: #4e6e8e;
+  color: var(--introduce-text-color);
   font-size: 0.8rem;
 }
 .introduce .item:last-of-type {
@@ -121,6 +139,7 @@ html::-webkit-scrollbar-track {
 }
 .anchor_nav .ant-anchor-link-title {
   font-size: 0.8rem;
+  color: var(--text-color);
 }
 .anchor_nav .ant-anchor-link-title-active {
   color: #1890ff;
@@ -142,4 +161,18 @@ html::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background: #ededed;
+}
+.ant-anchor-wrapper {
+  background-color: var(--bgc) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: var(--text-color) !important;
+  font-weight: 500;
 }

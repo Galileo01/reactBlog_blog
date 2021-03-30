@@ -1,12 +1,7 @@
-import MyHead from '../components/MyHead';
-import Header from '../components/GlobalHeader';
-import Footer from '../components/Footer';
-
+import PageFrame from '../components/PageFrame'
 export default function About() {
     return (
-        <>
-            <MyHead title="关于" />
-            <Header />
+        <PageFrame title="关于">
             <main className="about ">
                 <section className="introduce">
                     <div className="item">
@@ -43,8 +38,6 @@ export default function About() {
                     </div>
                 </section>
             </main>
-
-            <Footer />
-        </>
+        </PageFrame>
     );
 }

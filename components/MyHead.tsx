@@ -11,6 +11,7 @@ const MyHead: React.FC<MyHeadProps> = ({
             <Head>
                 <title>MARK 的博客|{title}</title>
                 <meta name="keywords" content="个人博客 前端 前端开发 React Next" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
             </Head>
         </>
     )

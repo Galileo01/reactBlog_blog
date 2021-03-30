@@ -80,6 +80,7 @@ const Home: React.FC<HomeProps> = ({ itemList, ok }) => {
             </main>
 
             <Footer />
+            
         </>
     );
 };

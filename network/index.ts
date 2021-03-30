@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { AxiosResponse, AxiosError } from 'axios';
-const baseURL = 'http://localhost:5000';
+const baseURL = process.env.NODE_ENV==='development'?'http://localhost:5000':'http://121.41.225.12:5000';
 const ins = axios.create({
     baseURL,
     timeout: 5000,

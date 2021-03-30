@@ -12,6 +12,7 @@ export interface postBaseInfo {
     Pid: number;
     keywords: string;
     updateTime: string;
+    readCount:number
 }
 export interface postItem extends postBaseInfo {
     content: string;
@@ -48,5 +49,9 @@ export interface submitCommentItem {
 //列表泛型
 export interface resListData<T> {
     data: T[];
+    ok: number;
+}
+export interface resData<T> {
+    data: T;
     ok: number;
 }

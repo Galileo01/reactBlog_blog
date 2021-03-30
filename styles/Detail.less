@@ -3,6 +3,12 @@
         font-size: 0.8rem;
         padding-bottom: 0.2rem;
         border-bottom: 1px solid #e8e8e8;
+        .ant-breadcrumb-link {
+            color: var(--text-color);
+        }
+        a {
+            color: var(--post_list-small-color);
+        }
     }
 
     .navbar {
@@ -11,8 +17,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             text-align: center;
-        }
-        .post_nav {
+            color: var(--text-color);
         }
     }
     .post {
@@ -20,11 +25,23 @@
             font-size: 1.6rem;
             text-align: center;
             padding: 1rem;
+            color: var(--text-color);
+        }
+        .other-info {
+            display: flex;
+            justify-content: space-around;
+            .small {
+                color: var(--post_list-small-color);
+                font-size: 0.8rem;
+            }
+            .read-count {
+                margin-left: 10px;
+            }
         }
         .content {
             padding: 1.3rem;
             font-size: 1rem;
-            color: rgb(85, 84, 84);
+            color: var(--detail-content-color);
             overflow-x: hidden;
             code {
                 font-size: 0.87rem;

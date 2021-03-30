@@ -4,8 +4,14 @@
 .post_comment .make_comment .bottom {
   margin-top: 10px;
 }
+.post_comment .ant-comment-content-author-name span {
+  color: var(--post_list-item-desc-color);
+}
 .post_comment .actions:hover {
   color: #1890ff;
+}
+.post_comment .actions {
+  color: var(--post_list-small-color);
 }
 .post_comment .comment_list .replay_comment {
   margin-top: 10px;

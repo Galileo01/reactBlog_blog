@@ -3,6 +3,12 @@
   padding-bottom: 0.2rem;
   border-bottom: 1px solid #e8e8e8;
 }
+.detail .ant-breadcrumb .ant-breadcrumb-link {
+  color: var(--text-color);
+}
+.detail .ant-breadcrumb a {
+  color: var(--post_list-small-color);
+}
 .detail .navbar {
   margin-top: 30px;
 }
@@ -10,16 +16,29 @@
   font-size: 1.1rem;
   font-weight: 600;
   text-align: center;
+  color: var(--text-color);
 }
 .detail .post .post_title {
   font-size: 1.6rem;
   text-align: center;
   padding: 1rem;
+  color: var(--text-color);
+}
+.detail .post .other-info {
+  display: flex;
+  justify-content: space-around;
+}
+.detail .post .other-info .small {
+  color: var(--post_list-small-color);
+  font-size: 0.8rem;
+}
+.detail .post .other-info .read-count {
+  margin-left: 10px;
 }
 .detail .post .content {
   padding: 1.3rem;
   font-size: 1rem;
-  color: #555454;
+  color: var(--detail-content-color);
   overflow-x: hidden;
 }
 .detail .post .content code {
